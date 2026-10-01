@@ -59,7 +59,7 @@ The optimized core keeps only the last 16 words and shifts the window by one eac
 | `Bitcoin-Serial-w64/` | Serial Bitcoin hasher | `meit_bitcoin_hash.sv`, `meit_bitcoin_sha.sv` |
 | `Bitcoin-Parallel-w16/` | 8-way parallel Bitcoin hasher | `meit_bitcoin_hash_opt.sv`, `meit_bitcoin_sha_opt.sv` |
 
-Each folder also contains its testbench (`tb_*.sv`).
+Each folder also contains its testbench (`tb_*.sv`). The testbenches were not written by me.
 
 `results/` has one subfolder per design with the same names. Each one contains the Quartus fitter report (`.fit.rpt`), the timing report (`.sta.rpt`), and a screenshot of the passing simulation.
 
@@ -69,6 +69,4 @@ Each folder also contains its testbench (`tb_*.sv`).
 
 ![Parallel simulation pass](results/Bitcoin-Parallel-w16/sim_pass.png)
 
-## Credits
 
-Built for ECE 111 (Advanced Digital Design Project) at UC San Diego. The testbenches were provided by the course staff.
